@@ -5,19 +5,22 @@ import * as BooksAPI from './BooksAPI'
 class SearchComponent extends React.Component{
   
   state={
-    query: '',
+    query: '', 
     books: []
   } 
 
 updateBooks = (query) => {
-BooksAPI.search(query, 20)
+ const regex = /^[A-Z a-z0-9]+$/i //RegEx to check for valid input
+ if(regex.test(query)){
+ BooksAPI.search(query, 20)
   .then((books) => {
 	this.setState(() => ({
-    books
+    books 
     }))
-})
+ })
+ }
 }
-
+ 
 searchBooks = (e) => {
   const q = e.target.value
   this.setState(() => ({
@@ -41,6 +44,7 @@ render(){
   const query = this.state.query
   query !== '' && (
   this.updateBooks(this.state.query))
+  if(query === '' && this.state.books.length !== 0){this.setState(() => ({books: []}))}
 return(
 
           <div className="search-books">

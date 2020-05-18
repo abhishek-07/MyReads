@@ -1,3 +1,8 @@
+/**
+@author: Abhishek Reddy
+@date: 17/May/2020
+*/
+
 import React from 'react'
 import './App.css'
 import {Route, Link} from 'react-router-dom'
@@ -32,12 +37,16 @@ updateBooks = (book, bookStatus) => {
 }
 
 handleChangeFromSearch = (book, shelf) => {
-  //console.log(book.shelf)
   book.shelf=shelf
+  const index = this.state.books.findIndex((b) => (
+  	b.id === book.id
+  ))
+  if(index === -1){
   this.setState((currentState) => ({
   books: currentState.books.concat([book])
   }))
   BooksAPI.update(book, shelf)
+  }
 }
 
 handleChange = (status, book) => {
