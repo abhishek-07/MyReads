@@ -2,7 +2,7 @@
 # MyReads Project
 
 * This is the complete working application for the final assessment project for Udacity's React Fundamentals course. The goal of this is to design an interface for the user to smartly manage the books on his table by categorizing them into <b>Currently Reading</b>, <b>Want to Read</b>, <b>Read</b>. Moreover user can browse new books to add them to the library.
-* This project is live at https://abhishekreddy.me feel free to look out.
+* This project is live at https://abhishekreddy.me feel free to check out.
 
 ## TL;DR
 
