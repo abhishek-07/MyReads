@@ -1,7 +1,8 @@
 
 # MyReads Project
 
-This is the complete working application for the final assessment project for Udacity's React Fundamentals course. The goal of this is to design an interface for the user to smartly manage the books on his table by categorizing them into <b>Currently Reading</b>, <b>Want to Read</b>, <b>Read</b>. Moreover user can browse new books to add them to the library.
+* This is the complete working application for the final assessment project for Udacity's React Fundamentals course. The goal of this is to design an interface for the user to smartly manage the books on his table by categorizing them into <b>Currently Reading</b>, <b>Want to Read</b>, <b>Read</b>. Moreover user can browse new books to add them to the library.
+* This project is live at https://abhishekreddy.me feel free to look out.
 
 ## TL;DR
 
@@ -332,8 +333,7 @@ search(query, maxResults)
 * These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
 
 ## Important
-* The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
-* This project is live at https://abhishekreddy.me feel free to look out.
+The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
 
 ## Create React App
 
